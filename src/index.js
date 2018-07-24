@@ -11,7 +11,7 @@ const server= http.createServer(app);
 const io = socketio.listen(server);
 
 // connection to the server
-mongoose.connect('mongodb://admin:<cloudcomputing123>@ds145981.mlab.com:45981/gpsdata')
+mongoose.connect('mongodb://admin:cloudcomputing123@ds145981.mlab.com:45981/gpsdata')
   .then(db => console.log('db connected'))
   .catch(err => console.log(err));
 
